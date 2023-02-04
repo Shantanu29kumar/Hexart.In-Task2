@@ -1,0 +1,20 @@
+Time series analysis using machine learning refers to the application of machine learning algorithms to time series data 
+to make predictions or uncover patterns and relationships. Time series data is a sequence of data points collected over time, 
+such as stock prices, weather patterns, or sales data. Machine learning algorithms can be applied to model these time series data 
+and make predictions about future values based on past observations. 
+
+In our dataset, time is recorded between January 1992 and December 2020 for the value and value of manufacturer shipments.
+
+First, we have resampled our time series data.
+Time resampling is a pre-processing step in time series analysis that involves changing the frequency of the data points in a time series.
+
+We then used the rolling mean method in our dataset.
+Rolling mean, also known as moving average, is a commonly used pre-processing step in machine learning that is applied to smooth time series data. 
+The rolling mean is calculated by taking the average of a fixed number of consecutive data points in the time series. In our case, it was from 1992 to 2020.
+The result is a smoothed version of the original time series data, which can be used as input for machine learning models. 
+The number of data points used to calculate the rolling mean is known as the window size. We have taken 10 as the size of the window.
+A larger window size results in a smoother time series, while a smaller window size retains more of the original fluctuations in the data. 
+Rolling mean can be applied to remove noise from time series data and to make patterns and trends in the data more visible.
+
+After time resampling and rolling mean, we plotted our time data in the graphs which are shown in our code.
+
