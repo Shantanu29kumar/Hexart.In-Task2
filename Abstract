@@ -18,3 +18,15 @@ Rolling mean can be applied to remove noise from time series data and to make pa
 
 After time resampling and rolling mean, we plotted our time data in the graphs which are shown in our code.
 
+The future scope and usability of time series analysis is broad and promising, as it is widely used in various fields and industries. 
+Some of the key areas where time series analysis is expected to have significant impact and growth include:
+
+   1.Forecasting
+   2.Predictive maintenance
+   3.Healthcare
+   4.Energy and environment
+   5.Customer behavior
+
+Overall, time series analysis is a powerful tool that can be used to gain insights into data and make predictions about future trends and patterns. 
+Its impact and usefulness are expected to continue to grow in the future, and it will likely play a crucial role in driving innovation 
+and growth in many industries and fields.
