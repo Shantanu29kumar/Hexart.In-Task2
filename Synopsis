@@ -3,18 +3,16 @@ to make predictions or uncover patterns and relationships. Time series data is a
 such as stock prices, weather patterns, or sales data. Machine learning algorithms can be applied to model these time series data 
 and make predictions about future values based on past observations. 
 
-In our dataset, time is recorded between January 1992 and December 2020 for the value and value of manufacturer shipments.
+In our dataset, time is recorded between January 1992 and December 2020 for the value and value of manufacturer shipments. 
+First, we have resampled our time series data. That resamples the data in a Pandas DataFrame dataset using the resample method. 
+The rule argument is set to 'AS', which stands for "annual start frequency". 
+The method returns the mean of the values in each resampled group, and the resulting data is shown for the first 5 rows using the head method. 
+This code essentially aggregates the data in the dataset DataFrame to an annual frequency and calculates the mean value for each year.
 
-First, we have resampled our time series data.
-Time resampling is a pre-processing step in time series analysis that involves changing the frequency of the data points in a time series.
-
-We then used the rolling mean method in our dataset.
-Rolling mean, also known as moving average, is a commonly used pre-processing step in machine learning that is applied to smooth time series data. 
-The rolling mean is calculated by taking the average of a fixed number of consecutive data points in the time series. In our case, it was from 1992 to 2020.
-The result is a smoothed version of the original time series data, which can be used as input for machine learning models. 
-The number of data points used to calculate the rolling mean is known as the window size. We have taken 10 as the size of the window.
-A larger window size results in a smoother time series, while a smaller window size retains more of the original fluctuations in the data. 
-Rolling mean can be applied to remove noise from time series data and to make patterns and trends in the data more visible.
+We then use the rolling mean method in our dataset. That computes a rolling mean for the data in a Pandas DataFrame dataset. 
+The rolling method is used to specify a rolling window size of 10(in our case), which means that for each data point, the mean of the values in the previous 10 
+data points will be calculated. The resulting data is shown for the first 20 rows using the head method. 
+The rolling mean is a common method to smooth out short-term fluctuations in time series data and highlight long-term trends.
 
 After time resampling and rolling mean, we plotted our time data in the graphs which are shown in our code.
 
